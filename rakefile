@@ -1,0 +1,7 @@
+task :build do
+  sh 'jekyll build'
+end
+
+task :deployRemote => [:buildRemote] do
+  sh 'rsync -avz ~/Development/blog.shepherddog.co/_site/ dbrunow@firehawk.shepherddog.co:/var/www/blog.shepherddog.co/public_html/'
+end
