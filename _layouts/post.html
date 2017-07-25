@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      <time datetime="{{ page.published | date_to_xmlschema }}" itemprop="datePublished">
+        {{ page.published | date: "%A, %B %-d, %Y at %l:%M %p" }}
+      </time>
+      {% if page.author %}
+        | <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
+      {% endif %}</p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  {% if site.disqus.shortname %}
+    {% include disqus_comments.html %}
+  {% endif %}
+</article>
+<nav id="pagination">
+	<p id="post-pager">
+	  {% if page.previous.url %}
+	    <a class="prev" href="{{page.previous.url}}" title="Previous Post">&lt; {{page.previous.title}}</a>
+	  {% endif %}
+	  {% if page.previous.url and page.next.url %}
+	  	|
+	  {% endif %}
+	  {% if page.next.url %}
+	    <a class="next" href="{{page.next.url}}" title="Next Post">{{page.next.title}} &gt;</a>
+	  {% endif %}
+	</p>
+</nav>

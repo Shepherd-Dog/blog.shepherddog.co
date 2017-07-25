@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body class="blog">
+
+    {% include header.html %}
+
+    <div id="main" class="page-content content" aria-label="Content">
+      <div class="sleeve">
+        <div id="content">
+        {{ content }}
+        </div>
+        {% include sidebar.html %}
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

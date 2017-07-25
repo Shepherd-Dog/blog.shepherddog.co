@@ -1,0 +1,28 @@
+<aside id="sidebar" class="sidebar">
+	<section class="panel">
+		<h3>Recent articles</h3>
+		<ul class="sidebar-post-list">
+		{% for post in site.posts limit:10 %}
+		  <li>
+		      <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+		  </li>
+		{% endfor %}
+		</ul>
+	    <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+	</section>
+	<section>
+		<a class="twitter-timeline" href="https://twitter.com/ShepherdDogHQ" data-widget-id="590264262381019137">
+			Tweets by @ShepherdDogHQ
+		</a> 
+		<script>
+			!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+		</script>
+		<div class="fb-page" data-href="https://www.facebook.com/ShepherdDogHQ" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true">
+			<div class="fb-xfbml-parse-ignore">
+				<blockquote cite="https://www.facebook.com/ShepherdDogHQ">
+					<a href="https://www.facebook.com/ShepherdDogHQ">Shepherd Dog</a>
+				</blockquote>
+			</div>
+		</div>
+	</section>
+</aside>

@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="home">  
+  {{ content }}
+    {% for post in paginator.posts %}
+        <h2 id="page-title">
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </h2>
+        <div>
+        <p class="post-meta">
+          <time datetime="{{ post.published | date_to_xmlschema }}" itemprop="datePublished">
+            Published {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+            {{ post.published | timeago }}
+          </time>
+          {% if post.author %}
+            by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ post.author }}</span></span>
+          {% endif %}</p>
+        </div>
+        <div>{{ post.excerpt }}</div>
+        <a class="read-more-link" href="{{ post.url | relative_url }}">Read more...</a>
+        
+    {% endfor %}
+</div>
+<nav id="pagination">
+	<p id="post-pager">
+	  {% if paginator.next_page_path %}
+	    <a class="next" href="{{paginator.next_page_path | prepend: site.baseurl}}" title="Older Posts">&lt; Older</a>
+	  {% endif %}
+	  {% if paginator.previous_page_path and paginator.next_page_path %}
+	  	|
+	  {% endif %}
+	  {% if paginator.previous_page_path %}
+	    <a class="prev" href="{{paginator.previous_page_path | prepend: site.baseurl}}" title="Newer Posts">Newer &gt;</a>
+	  {% endif %}
+	</p>
+</nav>
