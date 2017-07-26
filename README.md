@@ -9,7 +9,7 @@ This blog is built on top of [Jekyll](https://jekyllrb.com) which is a static si
 
 1. Copy one of the files in the `/_posts/CURRENT_YEAR` folder into a new file. Change the name of the file so that it starts with the current date (or the date that you will publish the post, if that is different) and has the title of the post without any special characters. Look at old posts if you need to see the format.
 
-1. Write your post in your file
+1. Write your post in your file. The syntax is Markdown and you can find a good reference on general syntax from the creator of Markdown, John Gruber, [here](https://daringfireball.net/projects/markdown/).
 
 1. Run `jekyll serve` in this site's folder on your local machine. That will start a web server and you can see what your new post will look like. If you need to make any changes Jekyll will be watching for them and re-building the site so all you need to do to see them is refresh your browser.
 
