@@ -16,9 +16,9 @@ div.byline .author
 	margin-top: 0;
 }
 
-.home h2.page-title
+.home h1.page-title
 {
-	margin-bottom: 0;
+	margin-bottom: 10px;
 }
 
 .home div.post-content
@@ -26,6 +26,12 @@ div.byline .author
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	margin-bottom: 50px;
 	padding-bottom: 50px;
+}
+
+.home a.read-more-link
+{
+	display: inline-block;
+	margin-top: 25px;
 }
 
 p.rss-subscribe
