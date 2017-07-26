@@ -3,6 +3,7 @@ layout: post
 published: 2015-08-20T18:10:21-05:00
 title: Healing Arts
 author: David
+excerpt: "Leslie Forsyth, the owner of Healing Arts, is my mom. Most of my life she has been the breadwinner of the household and for years she has owned her own business. She shared her entrepreneurial spirit with me..."
 ---
 ## Backstory
 

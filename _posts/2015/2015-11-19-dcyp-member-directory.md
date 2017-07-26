@@ -3,7 +3,9 @@ layout: post
 published: 2015-11-19T23:18:17-06:00
 title: DCYP Member Directory
 author: Brandy
+excerpt: "Wanting to become more involved in our community, we became members of a group called Denton County Young Professionals (DCYP) back in June. DCYP was started with a mission to strengthen the community and development of young professionals in Denton County. They do this by providing educational, social networking, and volunteer opportunities that will help develop its members into the next leaders of Denton County. The group was founded..."
 ---
+
 ## Backstory
 
 Wanting to become more involved in our community, we became members of a group called Denton County Young Professionals (DCYP) back in June. DCYP was started with a mission to strengthen the community and development of young professionals in Denton County. They do this by providing educational, social networking, and volunteer opportunities that will help develop its members into the next leaders of Denton County. The group was founded in December 2014 and is currently lead by a group who volunteers 100% of their time. Also, to become a member it was a small fee of $25 which 100% of went to the [Wheeler House](http://servedenton.org/wheeler-house/) in Denton. Being part of this group has been a wonderful experience for us, and knowing that 100% of their dues go to charity and that their leadership completely volunteers their time, when we were asked to help out with some of their technology we didn’t have to think twice before saying yes!

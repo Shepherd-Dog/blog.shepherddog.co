@@ -3,6 +3,9 @@ layout: post
 published: 2017-06-27T18:05:35-05:00
 title: Our Team is Growing!
 author: David
+excerpt: "We’re excited to announce that Danielle Gaither has agreed to join our team as a Developer! 
+<br><br>
+For those of you who don’t know Danielle..."
 ---
 We’re excited to announce that Danielle Gaither has agreed to join our team as a Developer! 
 

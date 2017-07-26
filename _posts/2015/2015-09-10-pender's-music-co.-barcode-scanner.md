@@ -3,6 +3,9 @@ layout: post
 published: 2015-09-10T16:54:59-05:00
 title: Pender's Music Co. Barcode Scanner
 author: David
+excerpt: "After we started Shepherd Dog we got out into the local community through volunteering, going to meet ups, and figuring out the people and companies that were already established in the local technology industry and setting up meetings with them. We still haven't met everyone, but this story starts with one of those meetups, in particular Little DOCC.
+<br><br>
+The Little DOCC is a biweekly meeting for Denton technology..."
 ---
 ## Backstory
 
