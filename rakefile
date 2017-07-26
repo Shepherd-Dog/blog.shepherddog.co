@@ -3,5 +3,5 @@ task :build do
 end
 
 task :deployRemote => [:buildRemote] do
-  sh 'rsync -avz ~/Development/blog.shepherddog.co/_site/ dbrunow@firehawk.shepherddog.co:/var/www/blog.shepherddog.co/public_html/'
+  sh 'rsync -avz ./_site/ shepherddog@firehawk.shepherddog.co:/var/www/blog.shepherddog.co/public_html/'
 end
