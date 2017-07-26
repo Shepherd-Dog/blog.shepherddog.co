@@ -3,16 +3,17 @@ layout: default
 ---
 
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
+    <div class="byline">
+      {% if page.author %}
+        <p itemprop="author" class="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span>
+        </p>
+      {% endif %}
       <time datetime="{{ page.published | date_to_xmlschema }}" itemprop="datePublished">
         {{ page.published | date: "%A, %B %-d, %Y at %l:%M %p" }}
       </time>
-      {% if page.author %}
-        | <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
-      {% endif %}</p>
+    </div>
+    <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
   </header>
 
   <div class="post-content" itemprop="articleBody">
@@ -27,9 +28,6 @@ layout: default
 	<p id="post-pager">
 	  {% if page.previous.url %}
 	    <a class="prev" href="{{page.previous.url}}" title="Previous Post">&lt; {{page.previous.title}}</a>
-	  {% endif %}
-	  {% if page.previous.url and page.next.url %}
-	  	|
 	  {% endif %}
 	  {% if page.next.url %}
 	    <a class="next" href="{{page.next.url}}" title="Next Post">{{page.next.title}} &gt;</a>
