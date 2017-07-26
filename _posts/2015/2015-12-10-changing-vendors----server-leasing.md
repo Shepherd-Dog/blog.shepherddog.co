@@ -1,7 +1,7 @@
 ---
 layout: post
 published: 2015-12-10T21:34:01-06:00
-title: Changing Vendors -- Server Leasing
+title: Changing Vendors – Server Leasing
 author: David
 ---
 We strongly believe that the decisions we make reflect our values. So we put a lot of effort into researching and discussing every decision we make as a company to ensure that we are upholding our values. Sometimes that gets challenging when our values conflict with each other. We'd like to share our decision process behind choosing our new Server Leasing Vendor so you can understand our thought process and see our value system at work.
