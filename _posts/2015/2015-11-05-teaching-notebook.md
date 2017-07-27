@@ -3,6 +3,7 @@ layout: post
 published: 2015-11-05T22:49:37-06:00
 title: Teaching Notebook
 author: David
+profile_link: "/media/profile-pics/david-50x50@2x.jpg"
 excerpt: "Today we are proud to announce that our first Shepherd Dog app is now available. It is called Teaching Notebook and <a href='https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1022006227&mt=8'>you can find it in the App Store for $9.99</a>.
 <br><br>
 This project has been in the works for a couple years but we didn't really get started on it until this past February when we started Shepherd Dog.

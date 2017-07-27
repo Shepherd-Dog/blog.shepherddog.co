@@ -3,6 +3,7 @@ layout: post
 published: 2016-01-21T18:14:45-06:00
 title: Inception Lighting Quote Tool
 author: David
+profile_link: "/media/profile-pics/david-50x50@2x.jpg"
 ---
 We've said many times that one of our favorite things is to see companies spend time, money, and effort to build technological tools for their employees. Our story about building the Quote Tool for [Inception Lighting](http://inceptionlighting.com) is one of those stories with a slight twist -- due to the nature of their business the Quote Tool also serves as a sales and marketing tool.
 

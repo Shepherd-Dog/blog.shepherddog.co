@@ -3,6 +3,7 @@ layout: post
 published: 2015-03-31T20:37:37-05:00
 title: Transparency Part 1
 author: Brandy & David
+profile_link: "/media/profile-pics/brandy-50x50@2x.jpg"
 ---
 In these first few months as we make decisions about Shepherd Dog we are also figuring out what our values are. Part of our thought process for each decision involves analyzing why we made that decision and what it says about who we are. In the near future we will put our values into writing and make them a core part of our site.
 

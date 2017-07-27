@@ -3,6 +3,7 @@ layout: post
 published: 2015-12-10T21:34:17-06:00
 title: HTTPS and HTTP2
 author: David
+profile_link: "/media/profile-pics/david-50x50@2x.jpg"
 ---
 We are happy to announce that all of the websites we host are now served over an HTTPS connection. What does that mean to the majority of people out there that aren't nerds? 
 

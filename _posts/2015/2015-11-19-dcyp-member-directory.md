@@ -3,6 +3,7 @@ layout: post
 published: 2015-11-19T23:18:17-06:00
 title: DCYP Member Directory
 author: Brandy
+profile_link: "/media/profile-pics/brandy-50x50@2x.jpg"
 excerpt: "Wanting to become more involved in our community, we became members of a group called Denton County Young Professionals (DCYP) back in June. DCYP was started with a mission to strengthen the community and development of young professionals in Denton County. They do this by providing educational, social networking, and volunteer opportunities that will help develop its members into the next leaders of Denton County. The group was founded..."
 ---
 

@@ -3,6 +3,7 @@ layout: post
 published: 2015-04-14T20:45:17-05:00
 title: How Do You Market That?
 author: Brandy
+profile_link: "/media/profile-pics/brandy-50x50@2x.jpg"
 ---
 We’re excited to be starting this new adventure with Shepherd Dog, so naturally we’ve been sharing our excitement with family, old friends, new friends… basically anyone that’s interested. And in doing so we’ve found that frequently the first question we get from people is, “How do you market something like that?”
 

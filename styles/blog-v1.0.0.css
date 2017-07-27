@@ -3,6 +3,12 @@ div.byline
 	text-align: right;
 }
 
+div.byline > div
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+
 div.byline time
 {
 	font-size: 0.8em;
@@ -43,4 +49,20 @@ p.rss-subscribe
 , #post-pager .next
 {
 	float: right;
+}
+
+div.profile-pic-container
+{
+	border-radius: 50%;
+	display: inline-block;
+	height: 50px;
+	margin-left: 5px;
+	overflow: hidden;
+	width: 50px;
+}
+
+div.profile-pic-container img
+{
+	height: 100%;
+	width: 100%;
 }

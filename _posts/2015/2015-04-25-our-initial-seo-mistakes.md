@@ -3,6 +3,7 @@ layout: post
 published: 2015-04-25T12:01:52-05:00
 title: Our Initial SEO Mistakes
 author: David
+profile_link: "/media/profile-pics/david-50x50@2x.jpg"
 ---
 Oh my have we learned a lot in the last couple months. I think our biggest gains are in the area of SEO where we have quickly gone from the idea that "good content will be found" to "we need to make sure that good content will be found" to my current position of "improving SEO means improving the user experience." I've realized that learning how Google taught bots to glean information from webpages can give incredible insights into how humans do it. Here are a few key insights and examples of how we got it wrong while trying to be right:
 

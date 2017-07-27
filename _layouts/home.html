@@ -12,6 +12,7 @@ layout: default
         <div>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</div>
         <a class="read-more-link" href="{{ post.url | relative_url }}">Read more...</a>
         <div class="byline">
+          <div>
           {% if post.author %}
             <p itemprop="author" class="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ post.author }}</span>
             </p>
@@ -20,6 +21,10 @@ layout: default
             {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
             {{ post.published | timeago }}
           </time>
+          </div>
+          {% if post.profile_link %}
+            <div class="profile-pic-container"><img src="{{ post.profile_link }}"/></div>
+          {% endif %}
         </div>
       </div>
     {% endfor %}

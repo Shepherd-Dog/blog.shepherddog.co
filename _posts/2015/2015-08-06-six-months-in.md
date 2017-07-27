@@ -3,6 +3,7 @@ layout: post
 published: 2015-08-06T07:28:06-05:00
 title: Six Months In
 author: David
+profile_link: "/media/profile-pics/david-50x50@2x.jpg"
 ---
 It has been six months since we created Shepherd Dog. In that time we've built four websites, created 3 iOS apps, and learned a handful of useful things. I'm thrilled with what we've accomplished so far, where we are right now, and really excited about where we are heading.
 

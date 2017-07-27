@@ -3,6 +3,7 @@ layout: post
 published: 2015-07-26T12:48:25-05:00
 title: Stay Flexible and Learn As You Go
 author: Brandy
+profile_link: "/media/profile-pics/brandy-50x50@2x.jpg"
 ---
 In a previous post we mentioned that when we started this journey, we didn’t have a spelled out plan for reaching our target market. One of the main reasons for this is that we wanted to stay flexible so we could learn and adjust as we grow. Also by nature we are “generalists”, we like to do a little bit of everything and not just specialize in one small specific area. Although we do have some specific strengths, we didn’t only want to focus on or offer just those services alone because we wanted to be able to learn exactly what other small businesses in the area need and then do what it takes to provide that to them. 
 

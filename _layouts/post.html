@@ -5,6 +5,7 @@ layout: default
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
     <div class="byline">
+      <div>
       {% if page.author %}
         <p itemprop="author" class="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span>
         </p>
@@ -12,6 +13,10 @@ layout: default
       <time datetime="{{ page.published | date_to_xmlschema }}" itemprop="datePublished">
         {{ page.published | date: "%A, %B %-d, %Y at %l:%M %p" }}
       </time>
+      </div>
+      {% if page.profile_link %}
+        <div class="profile-pic-container"><img src="{{ page.profile_link }}"/></div>
+      {% endif %}
     </div>
     <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
   </header>

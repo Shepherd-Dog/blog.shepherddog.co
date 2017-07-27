@@ -3,6 +3,7 @@ layout: post
 published: 2015-03-16T12:24:56-05:00
 title: Releasing Our First Client Project - Imperial Plumbing
 author: David
+profile_link: "/media/profile-pics/david-50x50@2x.jpg"
 ---
 Today we are thrilled to talk about the first client website that we have built. This project has an interesting story and we hope to turn parts of it into a template for how we find future clients. You can take a look at the new site at [https://www.imperialtx.com](https://www.imperialtx.com).
 
