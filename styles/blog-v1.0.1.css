@@ -66,3 +66,15 @@ div.profile-pic-container img
 	height: 100%;
 	width: 100%;
 }
+
+a.img-small
+{
+	display: inline-block;
+	position: relative;
+	width: 200px;
+}
+
+a.img-small img
+{
+	width: 100%;
+}
