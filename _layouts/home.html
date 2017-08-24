@@ -19,7 +19,7 @@ layout: default
           {% endif %}
           <time datetime="{{ post.published | date_to_xmlschema }}" itemprop="datePublished">
             {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-            {{ post.published | timeago }}
+            {{ post.published | date: "%A, %B %-d" }}
           </time>
           </div>
           {% if post.profile_link %}
