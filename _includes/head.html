@@ -6,6 +6,9 @@
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
+  {% if page.featured_image_link %}
+  	<meta content="{{ site.url }}{{ page.featured_image_link }}" property="og:image" >
+  {% endif %}
   <link rel="stylesheet" href="https://shepherddog.co/minified/shepherd-dogv1.0.6.min.css" />
   <link rel="stylesheet" href="/styles/blog-v1.0.1.css" />
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">

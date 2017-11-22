@@ -9,7 +9,12 @@ layout: default
         <h1 class="page-title">
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </h1>
-        <div>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</div>
+        <div>
+          {% if post.featured_image_link %}
+            <img src="{{ post.featured_image_link }}" />
+          {% endif %}
+          {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+        </div>
         <a class="read-more-link" href="{{ post.url | relative_url }}">Read more...</a>
         <div class="byline">
           <div>
