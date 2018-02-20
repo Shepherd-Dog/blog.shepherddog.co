@@ -1,49 +1,208 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-<div class="home">  
-  {{ content }}
-    {% for post in paginator.posts %}
-      <div class="post-content">
-        <h1 class="page-title">
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h1>
-        <div>
-          {% if post.featured_image_link %}
-            <img src="{{ post.featured_image_link }}" />
-          {% endif %}
-          {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
-        </div>
-        <a class="read-more-link" href="{{ post.url | relative_url }}">Read more...</a>
-        <div class="byline">
-          <div>
-          {% if post.author %}
-            <p itemprop="author" class="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ post.author }}</span>
-            </p>
-          {% endif %}
-          <time datetime="{{ post.published | date_to_xmlschema }}" itemprop="datePublished">
-            {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-            {{ post.published | date: "%A, %B %-d" }}
-          </time>
-          </div>
-          {% if post.profile_link %}
-            <div class="profile-pic-container"><img src="{{ post.profile_link }}"/></div>
-          {% endif %}
+{% include head.html %}
+
+<body class="home">
+
+  {% include header.html %}
+  <div class="content-container">
+    <div class="hero-container u-gradient-background">
+      <div class="background-colors">
+        <div></div>
+        <div></div>
+      </div>
+      <div class="background-blur"></div>
+      <div class="content">
+        <label>
+          Howdy, we're Shepherd Dog!
+        </label>
+        <div class="hero-image-container">
+          <img class="hero-image" src="/media/courthouse.png" />
         </div>
       </div>
-    {% endfor %}
+    </div>
+    <div class="content">
+      <h2>What's Your Core Competency?</h2>
+      <p>
+        Is it roasting coffee? Baking cakes? Caring for the elderly or infirm? Building devices that connect to the internet? Providing educational resources?
+      </p>
+      <p>
+        Ours is building and maintaining software tools for businesses &mdash; tools used by your customers and employees. We listen to your needs and figure out how to make the technology work for you, whether that means owning every bit of the process or collaborating with your internal team to fill gaps. We've worked with businesses across many industries, have developed the skills to rapidly absorb new information, and hit the ground running.
+      </p>
+    </div>
+  </div>
+  <div class="content-container strengths">
+    <div class="content">
+      <div class="copy-container">
+        <h2>
+          Our Strengths
+        </h2>
+        <p>
+          It's hard to boil a company (even a small company like ours) down into three strengths but this layout looks good and we don't want to overwhelm you. In addition to these, you can read about <a href="https://github.com/Shepherd-Dog/Shepherd-Dog/blob/master/values.md">our core values</a> or some of <a href="/blog">our blog posts</a>.
+        </p>
+        <ul class="strengths">
+          <li>
+            <img src="/media/focus.svg" />
+            <h3>Size</h3>
+            <p>
+              We're a small, focused team. Our size allows us to avoid communication and project management overhead. Our diverse skillsets allow us to handle everything needed to build and maintain software from initial discovery to final testing.
+            </p>
+          </li>
+          <li>
+            <img src="/media/toolbox.svg" />
+            <h3>Tools</h3>
+            <p>
+              We are technology-agnostic, speak many languages, and have experience with a variety of frameworks. This allows us to choose the right thing for your project.
+            </p>
+          </li>
+          <li>
+            <img src="/media/care.svg" />
+            <h3>Care</h3>
+            <p>
+              We have an unfair advantage &mdash; we care more than most. We pour ourselves entirely into a project and stop at nothing to deliver it.
+            </p>
+            <p>
+              Delivering complicated projects is tough and we care enough to fight through the hard times.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="content-container">
+    <div class="content">
+      <div class="copy-container">
+        <h2>
+          Our Team
+        </h2>
+        <p>
+          We've come a long way since early 2015 when we just wanted to help small businesses with their technology. Through our experience trying everything inside that space we've found what we're good at and passionate about &mdash; building technology tools that help businesses work better.
+        </p>
+        <ul class="our-team">
+          <li>
+            <div class="image-container">
+              <img alt="Picture of Brandy Thomas"
+              src="/media/profile-pics/brandy.jpg"
+              class="bio-image" />
+            </div>
+            <div class="bio-container">
+              <h3>Brandy Thomas</h3>
+              <label>Co-founder</label>
+              <p>
+                Brandy is the human mind behind Shepherd Dog. Brandy uses her diverse skillset to handle everything from talking with clients to design to detailed and thorough testing.
+              </p>
+              <p>
+                Her experience across job functions and industries and strong analytic mind makes her great at troubleshooting business processes.
+              </p>
+              <p>
+                Brandy analyzes businesses and creates documentation about what needs to be built. At the end she completes the cycle by testing the systems.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="image-container">
+              <img alt="Picture of David Brunow"
+              src="/media/profile-pics/david.jpg"
+              class="bio-image" />
+            </div>
+            <div class="bio-container">
+              <h3>David Brunow</h3>
+              <label>Co-founder</label>
+              <p>
+                David is the technical mind behind Shepherd Dog. He uses his strong technical skills to analyze business problems and find the right technical solutions to those problems. He speaks a large number of programming languages and is constantly learning something new.
+              </p>
+              <p>
+                His secret weapon is his background in a variety of different industries before finding his love of code which give him perspective on technical solutions that allows him to balance business needs with technical perfection.
+              </p>
+              <p>
+                David conceptualizes, architects, and builds web and mobile systems.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="image-container">
+              <img alt="Picture of Danielle Gaither"
+              src="/media/profile-pics/danielle.jpg"
+              class="bio-image" />
+            </div>
+            <div class="bio-container">
+              <h3>Danielle Gaither</h3>
+              <label>Developer</label>
+              <p>
+                Danielle is an academic who can also get stuff done. She's finishing up her PhD. from the University of North Texas while growing her real-world skills.
+              </p>
+              <p>
+                Danielle has experience building mobile apps and is working on expanding her skillset to the web.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="content-container testimonials">
+    <div class="content">
+      <div class="copy-container">
+        <h2>
+          Testimonials
+        </h2>
+        <p>
+          When working with clients we're behind the scenes to build things that reflect our client's branding and needs. Because of this we treat our clients and what we do for them with a level of secrecy &mdash; no one needs to know what they are building internally and what we're helping them with.
+        </p>
+        <p>
+          This makes marketing ourselves a little bit difficult because we can't just openly share what we've built with the world. Similarly, we've masked (and pixelated) the identities of our clients that provided testimonials here.
+        </p>
+        <ul class="testimonials">
+          <li class="u-gradient-background">
+            <div class="testimonial-container">
+              <p>
+                This is a testimonial. This isn't the real testimonial because I can't find the real testimonial in my email. That is not a good testimonial for my skills at finding emails.
+              </p>
+              <cite>&mdash; A Director of Operations</cite>
+            </div>
+            <div class="image-container">
+              <img alt="Image of Testimonial Client"
+              src="/media/testimonial-client-1.png" />
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="content-container">
+    <div class="content">
+      <div class="copy-container">
+        <h2>
+          Project Estimator
+        </h2>
+        <p>
+          Our bill rate is $124/hour ($62/hour for non-profits) but that number doesn't tell you how much a project will cost. Use our estimator below to get an idea of what different kinds of projects will cost. Estimates generated by the estimator are not binding quotes &mdash; call or email us to get a formal quote.
+        </p>
+      </div>
+    </div>
+  </div>
+  <a name="contact-us"></a>
+  <div class="content-container call-to-action">
+    <div class="content">
+      <div class="copy-container">
+        <h2>
+          Get in Touch
+        </h2>
+        <p>
+          Have you found yourself nodding your head with what you've read about us? Or do you need some more convincing?
+        </p>
+        <p>
+          Send us an email so we can schedule a time to show off some things we've built.
+        </p>
+      </div>
+      <a class="button" href="mailto:howdy@shepherddog.co">Contact Us Now</a>
+    </div>
+  </div>
 </div>
-<nav id="pagination">
-	<p id="home-pager">
-	  {% if paginator.next_page_path %}
-	    <a class="next" href="{{paginator.next_page_path | prepend: site.baseurl}}" title="Older Posts">&lt; Older</a>
-	  {% endif %}
-	  {% if paginator.previous_page_path and paginator.next_page_path %}
-	  	|
-	  {% endif %}
-	  {% if paginator.previous_page_path %}
-	    <a class="prev" href="{{paginator.previous_page_path | prepend: site.baseurl}}" title="Newer Posts">Newer &gt;</a>
-	  {% endif %}
-	</p>
-</nav>
+
+{% include footer.html %}
+
+</body>
+
+</html>

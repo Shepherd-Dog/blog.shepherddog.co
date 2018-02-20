@@ -1,3 +1,35 @@
+body.blog div#main .sleeve
+{
+	align-items: flex-start;
+	display: flex;
+	width: 100%;
+}
+
+body.blog div#main
+{
+	margin-top: 100px;
+	max-width: 1000px;
+}
+
+body.blog div#main #content
+, body.blog div#main #sidebar
+{
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+body.blog div#main #content
+{
+	width: 60%;
+}
+
+body.blog div#main #sidebar
+{
+    margin-left: 50px;
+    margin-top: 25px;
+    width: 30%;
+}
+
 div.byline
 {
 	text-align: right;
@@ -77,4 +109,25 @@ a.img-small
 a.img-small img
 {
 	width: 100%;
+}
+
+body.blog li.blog a
+, body.blog li.blog a a:visited
+{
+    color: rgb(255, 191, 145);
+}
+
+#content h1 a
+{
+    color: rgb(0, 154, 200);
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 600px), only screen and (min-width: 325px) and (max-width: 600px)
+{
+    body.blog li.blog a
+    , body.blog li.blog a a:visited
+    {
+        color: rgb(0, 154, 200);
+    }
 }

@@ -5,12 +5,23 @@
 
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}" >
+  <meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}" >
+  <meta name="twitter:card" content="summary_large_image" >
+  <meta name="twitter:site" content="@ShepherdDogHQ" >
+  <meta name="twitter:creator" content="@ShepherdDogHQ" >
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}" >
+  <meta name="twitter:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
   {% if page.featured_image_link %}
   	<meta content="{{ site.url }}{{ page.featured_image_link }}" property="og:image" >
+    <meta name="twitter:image" content="{{ site.url }}{{ page.featured_image_link }}">
+  {% else %}
+    <meta property="og:image" content="/media/courthouse.png" >
+    <meta name="twitter:image" content="/media/courthouse.png">
   {% endif %}
-  <link rel="stylesheet" href="https://shepherddog.co/minified/shepherd-dogv1.0.6.min.css" />
-  <link rel="stylesheet" href="/styles/blog-v1.0.1.css" />
+  <link rel="stylesheet" href="/css/main.css?v={{ site.version }}" />
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+  <link rel="SHORTCUT ICON" href="/favicon-v1.ico" >
 </head>

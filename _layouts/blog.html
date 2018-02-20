@@ -1,0 +1,49 @@
+---
+layout: blog_default
+---
+
+<div class="home">
+  {{ content }}
+    {% for post in paginator.posts %}
+      <div class="post-content">
+        <h1 class="page-title">
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </h1>
+        <div>
+          {% if post.featured_image_link %}
+            <img src="{{ post.featured_image_link }}" />
+          {% endif %}
+          {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+        </div>
+        <a class="read-more-link" href="{{ post.url | relative_url }}">Read more...</a>
+        <div class="byline">
+          <div>
+          {% if post.author %}
+            <p itemprop="author" class="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ post.author }}</span>
+            </p>
+          {% endif %}
+          <time datetime="{{ post.published | date_to_xmlschema }}" itemprop="datePublished">
+            {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+            {{ post.published | date: "%A, %B %-d" }}
+          </time>
+          </div>
+          {% if post.profile_link %}
+            <div class="profile-pic-container"><img src="{{ post.profile_link }}"/></div>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+</div>
+<nav id="pagination">
+	<p id="home-pager">
+	  {% if paginator.next_page_path %}
+	    <a class="next" href="{{paginator.next_page_path | prepend: site.baseurl}}" title="Older Posts">&lt; Older</a>
+	  {% endif %}
+	  {% if paginator.previous_page_path and paginator.next_page_path %}
+	  	|
+	  {% endif %}
+	  {% if paginator.previous_page_path %}
+	    <a class="prev" href="{{paginator.previous_page_path | prepend: site.baseurl}}" title="Newer Posts">Newer &gt;</a>
+	  {% endif %}
+	</p>
+</nav>

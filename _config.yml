@@ -23,10 +23,14 @@ twitter_username: ShepherdDogHQ
 github_username:  ShepherdDog
 copyright_starting_year: "2015"
 copyright_owner: "Shepherd Dog, LLC"
+version: 2.0.0
 pagination:
   enabled: true
   sort_reverse: true
 permalink: pretty
+
+sass:
+  style: compressed
 
 # Build settings
 markdown: kramdown
@@ -35,6 +39,7 @@ plugins:
   - jekyll-feed
   - jekyll-timeago
   - jekyll-paginate-v2
+  - jekyll-minifier
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

@@ -1,0 +1,288 @@
+h2
+{
+	text-align: center;
+}
+
+.content-container
+{
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+
+#header + .content-container
+{
+	padding-top: 0;
+}
+
+.content-container.strengths
+, .content-container.testimonials
+{
+	background-color: #F8F8F8;
+}
+
+ul.strengths
+{
+	display: flex;
+	list-style-type: none;
+	margin-top: 50px;
+	padding: 0;
+}
+
+ul.strengths li
+{
+	display: flex;
+	flex-direction: column;
+	margin: 0 20px;
+	text-align: center;
+	width: 33%;
+}
+
+
+ul.strengths li p
+{
+	text-align: justify;
+}
+
+ul.strengths li img
+{
+	display: block;
+	margin: 0 auto;
+	width: 25%;
+}
+
+ul.testimonials
+{
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+}
+
+ul.testimonials li
+{
+	border: 1px solid #aaa;
+	border-radius: 8px;
+	color: white;
+	display: flex;
+	height: 250px;
+	margin: 0 10px;
+	padding: 25px;
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+
+ul.testimonials li .testimonial-container
+{
+	text-align: left;
+	width: 75%;
+}
+
+.testimonial-container cite
+{
+	display: block;
+	font-size: 0.8em;
+	font-style: normal;
+	font-weight: 300;
+	text-align: right;
+	text-transform: uppercase;
+}
+
+ul.testimonials li .image-container
+{
+	bottom: 0;
+	position: absolute;
+	right: 0;
+	width: 25%;
+}
+
+ul.our-team
+{
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	margin-top: 50px;
+	padding: 0;
+}
+
+ul.our-team li
+{
+	align-items: center;
+	display: flex;
+	border-top: 1px solid #aaa;
+	padding-bottom: 25px;
+	padding-top: 25px;
+}
+
+
+ul.our-team li:nth-child(even)
+{
+	flex-direction: row-reverse;
+}
+
+
+ul.our-team li .bio-container
+{
+	text-align: left;
+	width: 75%;
+}
+
+ul.our-team li .bio-container h3
+{
+	margin: 0;
+}
+
+ul.our-team li .bio-container label
+{
+	font-size: 0.8em;
+	font-weight: 200;
+	text-transform: uppercase;
+}
+
+ul.our-team li .image-container
+{
+	height: auto;
+	margin: 0 25px;
+	width: 25%;
+}
+
+ul.our-team li .image-container img
+{
+	border-radius: 50%;
+	width: 100%;
+}
+
+.content-container
+{
+	text-align: center;
+}
+
+.content-container.call-to-action .content
+{
+	background-color: rgb(0, 154, 200);
+	border: 1px solid #aaa;
+	border-radius: 8px;
+	color: white;
+	padding: 25px;
+}
+
+a.button
+{
+	text-decoration: none;
+}
+
+.content-container.call-to-action a.button
+, .content-container.call-to-action a:visited.button
+{
+	border: 1px solid white;
+	border-radius: 4px;
+	color: white;
+	cursor: pointer;
+	display: block;
+	margin: 0 auto;
+	margin-top: 50px;
+	padding: 10px 5px;
+	text-align: center;
+	width: 150px;
+}
+
+.content-container.call-to-action a:hover.button
+{
+	background-color: white;
+	color: rgb(0, 154, 200);
+}
+
+.hero-container
+{
+	margin-bottom: 25px;
+	padding-top: 50px;
+	position: relative;
+}
+
+.content
+{
+	position: relative;
+	z-index: 3;
+}
+
+.hero-container > .content > label
+{
+	color: white;
+	display: block;
+	font-weight: 700;
+	margin-bottom: 15px;
+	margin-top: 75px;
+	text-transform: uppercase;
+}
+
+.hero-image-container
+{
+	margin: 0 auto;
+	width: 50%;
+}
+
+div.background-colors
+, div.background-blur
+{
+	display: none;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+div.background-colors
+{
+	display: flex;
+	flex-wrap: wrap;
+	z-index: 0;
+}
+
+div.background-colors > div
+{
+	display: none;
+	height: 100%;
+	width: 50%;
+}
+
+div.background-colors > div:nth-child(odd)
+{
+	background-color: red;
+}
+
+div.background-colors > div:nth-child(even)
+{
+	background-color: blue;
+}
+
+.u-gradient-background
+{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ed2f32+0,7a7ee2+100 */
+	background: #ed2f32; /* Old browsers */
+	background: -moz-linear-gradient(left, #ed2f32 0%, #7a7ee2 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #ed2f32 0%,#7a7ee2 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #ed2f32 0%,#7a7ee2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed2f32', endColorstr='#7a7ee2',GradientType=1 ); /* IE6-9 */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e89a2e+0,79c4e0+100 */
+	background: #e89a2e; /* Old browsers */
+	background: -moz-linear-gradient(left, #e89a2e 0%, #79c4e0 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #e89a2e 0%,#79c4e0 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #e89a2e 0%,#79c4e0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e89a2e', endColorstr='#79c4e0',GradientType=1 ); /* IE6-9 */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#520e75+0,00827d+100 */
+	background: #520e75; /* Old browsers */
+	background: -moz-linear-gradient(left, #520e75 0%, #00827d 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #520e75 0%,#00827d 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #520e75 0%,#00827d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#520e75', endColorstr='#00827d',GradientType=1 ); /* IE6-9 */
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none)
+{
+	div.background-blur
+	{
+	        -webkit-backdrop-filter: blur(150px);
+	        backdrop-filter: blur(150px);
+	        background-color: rgba(255, 255, 255, 0.3);
+	}
+}

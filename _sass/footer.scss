@@ -1,0 +1,117 @@
+
+footer
+{
+    background-color: rgba(39, 32, 28, 1);
+    color: #EFEFEF;
+    font-size: 0.5em;
+    margin-top: 100px;
+    margin-top: 30em;
+    padding: 25px 0;
+    position: relative;
+    width: 100%;
+}
+
+footer.post-footer
+{
+    background-color: inherit;
+    color: inherit;
+}
+
+footer > div
+{
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 90%;
+    padding: 15px 10px;
+}
+
+footer p
+{
+    margin: 0;
+}
+
+footer .social-container
+{
+    margin-bottom: 25px;
+}
+
+footer .columns
+{
+    padding: 5px;
+    width: 33%;
+}
+
+footer .columns:nth-child(even)
+{
+    text-align: center;
+}
+
+footer .columns:first-child
+{
+    text-align: left;
+}
+
+footer .columns:last-child
+{
+    text-align: right;
+}
+
+footer a
+{
+    color: #EFEFEF;
+}
+
+#imgTexas
+{
+    height:20px;
+    width:20px;
+    background-color:transparent;
+}
+
+@media only screen and (min-width: 600px), only screen and (min-width: 325px) and (max-width: 600px)
+{
+    footer
+    {
+        font-size: 0.7em;
+        margin-top: 100px;
+    }
+
+    footer > div
+    {
+        margin: 0 auto;
+        max-width: 1000px;
+    }
+}
+
+@media only screen and (max-width: 600px)
+{
+    footer .columns
+    {
+        padding: 10px 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    footer .columns:last-child
+    {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 575px)
+{
+
+    footer .columns
+    {
+        padding: 10px 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    footer .columns:last-child
+    {
+        text-align: center;
+    }
+}
