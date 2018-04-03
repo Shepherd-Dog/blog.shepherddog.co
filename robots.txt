@@ -2,4 +2,4 @@
 
 User-agent: *
 
-sitemap: shepherddog.co/sitemap.xml
+sitemap: shep.herd.dog/sitemap.xml

@@ -13,12 +13,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Shepherd Dog - Web and Mobile App Development in Denton, Texas
+title: Shepherd Dog - Web, iOS, Android, and Business Automation Development in Denton, Texas
 email: howdy@shep.dog
 description: > # this means to ignore newlines until "baseurl:"
-  Shepherd Dog builds software tools and applications for small businesses, startups, and non-profits – everything from web to iOS to Android.
+  Shepherd Dog builds software tools and applications for small businesses, startups, and non-profits – including web, iOS, and Android apps as well as custom software for business automation.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://blog.shepherddog.co" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://shep.herd.dog" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ShepherdDogHQ
 github_username:  ShepherdDog
 copyright_starting_year: "2015"
