@@ -1,0 +1,27 @@
+a.button
+{
+	border: 1px solid white;
+	border-radius: 4px;
+	cursor: pointer;
+	display: block;
+	padding: 10px 10px;
+	position: relative;
+	text-align: center;
+}
+
+a.button
+{
+	text-decoration: none;
+}
+
+
+a.button.disabled
+{
+	border: 1px solid #888;
+	border-radius: 4px;
+	color: #888;
+	cursor: default;
+	display: inline-block;
+	margin-top: 50px;
+	padding: 10px 10px;
+}

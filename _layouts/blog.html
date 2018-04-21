@@ -4,36 +4,43 @@ layout: blog_default
 
 <div class="home">
   {{ content }}
-    {% for post in paginator.posts %}
-      <div class="post-content">
-        <h1 class="page-title">
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h1>
-        <div>
-          {% if post.featured_image_link %}
-            <img src="{{ post.featured_image_link }}" />
-          {% endif %}
-          {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
-        </div>
-        <a class="read-more-link" href="{{ post.url | relative_url }}">Read more...</a>
-        <div class="byline">
+    {% assign posts_to_show = paginator.posts %}
+    {% if page.post_type_to_show == 'favorites' %}
+      {% assign posts_to_show = site.posts | sort: 'title' %}
+    {% endif %}
+    {% for post in posts_to_show %}
+      {% if page.post_type_to_show != 'favorites' or page.post_type_to_show == 'favorites' and post.is_favorite == true %}
+        <div class="post-content">
+          <h1 class="page-title">
+            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          </h1>
           <div>
-          {% if post.author %}
-            <p itemprop="author" class="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ post.author }}</span>
-            </p>
-          {% endif %}
-          <time datetime="{{ post.published | date_to_xmlschema }}" itemprop="datePublished">
-            {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-            {{ post.published | date: "%A, %B %-d" }}
-          </time>
+            {% if post.featured_image_link %}
+              <img src="{{ post.featured_image_link }}" />
+            {% endif %}
+            {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
           </div>
-          {% if post.profile_link %}
-            <div class="profile-pic-container"><img src="{{ post.profile_link }}"/></div>
-          {% endif %}
+          <a class="read-more-link" href="{{ post.url | relative_url }}">Read more...</a>
+          <div class="byline">
+            <div>
+            {% if post.author %}
+              <p itemprop="author" class="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ post.author }}</span>
+              </p>
+            {% endif %}
+            <time datetime="{{ post.published | date_to_xmlschema }}" itemprop="datePublished">
+              {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+              {{ post.published | date: "%A, %B %-d, %Y" }}
+            </time>
+            </div>
+            {% if post.profile_link %}
+              <div class="profile-pic-container"><img src="{{ post.profile_link }}"/></div>
+            {% endif %}
+          </div>
         </div>
-      </div>
+      {% endif %}
     {% endfor %}
 </div>
+{% if page.post_type_to_show != 'favorites' %}
 <nav id="pagination">
 	<p id="home-pager">
 	  {% if paginator.next_page_path %}
@@ -47,3 +54,4 @@ layout: blog_default
 	  {% endif %}
 	</p>
 </nav>
+{% endif %}

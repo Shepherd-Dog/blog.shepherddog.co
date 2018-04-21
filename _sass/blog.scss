@@ -131,3 +131,23 @@ body.blog li.blog a
         color: rgb(0, 154, 200);
     }
 }
+
+@media only screen and (max-width: 768px)
+{
+	body.blog div#main h1.page-title
+	{
+		font-size: 1.8em;
+	}
+
+	body.blog div#main div.sleeve
+	{
+		flex-direction: column;
+	}
+
+	body.blog div#main #content
+	, body.blog div#main #sidebar
+	{
+		margin: 0 auto;
+		width: 95%;
+	}
+}

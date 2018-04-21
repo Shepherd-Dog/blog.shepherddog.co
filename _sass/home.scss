@@ -14,6 +14,23 @@ h2
 	padding-top: 0;
 }
 
+.maze-container
+{
+	height: 100%;
+	left: 0;
+	margin-top: -25px;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.maze-container
+{
+	background-image: url(/media/amazing-white.svg);
+	background-position: center;
+	margin-top: 0px;
+}
+
 .content-container.strengths
 , .content-container.testimonials
 , .content-container.call-to-action
@@ -29,12 +46,20 @@ h2
 
 .copy-container > h2
 {
+	-webkit-background-clip: text;
+	background-clip: text;
 	border-radius: 16px;
-	color: white;
+	color: transparent;
 	display: inline-block;
+	margin-bottom: 25px;
 	padding-left: 25px;
 	padding-right: 25px;
 	width: auto;
+}
+
+.content-container.call-to-action h2
+{
+	color: white;
 }
 
 ul.strengths
@@ -80,7 +105,7 @@ ul.testimonials li
 	border-radius: 8px;
 	color: white;
 	display: flex;
-	margin: 0 10px;
+	/*margin: 0 10px;*/
 	padding: 25px;
 	position: relative;
 	text-align: center;
@@ -114,7 +139,6 @@ ul.testimonials li .image-container
 ul.our-team
 {
 	display: flex;
-	flex-direction: column;
 	list-style-type: none;
 	margin-top: 50px;
 	padding: 0;
@@ -124,21 +148,15 @@ ul.our-team li
 {
 	align-items: center;
 	display: flex;
-	border-top: 1px solid #aaa;
+	flex-direction: column;
 	padding-bottom: 25px;
 	padding-top: 25px;
+	width: 33%;
 }
-
-
-ul.our-team li:nth-child(even)
-{
-	flex-direction: row-reverse;
-}
-
 
 ul.our-team li .bio-container
 {
-	text-align: left;
+	text-align: center;
 	width: 75%;
 }
 
@@ -154,21 +172,14 @@ ul.our-team li .bio-container label
 	text-transform: uppercase;
 }
 
-ul.our-team li .image-container
+ul.our-team li .image-container.bio-image
 {
-	height: auto;
-	margin: 0 25px;
-	width: 25%;
-}
-
-ul.our-team li .image-container img
-{
-	border-radius: 50%;
-	width: 100%;
+	width: 60%;
 }
 
 .content-container
 {
+	position: relative;
 	text-align: center;
 }
 
@@ -181,45 +192,25 @@ ul.our-team li .image-container img
 	padding: 25px;
 }
 
-a.button
-{
-	text-decoration: none;
-}
-
 .content-container.call-to-action a.button
-, .content-container.call-to-action a:visited.button
+, .content-container.call-to-action a.button:visited
 {
-	border: 1px solid white;
-	border-radius: 4px;
 	color: white;
-	cursor: pointer;
-	display: block;
 	margin: 0 auto;
 	margin-top: 50px;
-	padding: 10px 10px;
-	text-align: center;
 	width: 150px;
 }
 
-.content-container.call-to-action a:hover.button
+.content-container.call-to-action a.button:hover
 {
 	background-color: white;
 	color: rgb(0, 154, 200);
 }
 
-a.button.disabled
-{
-	border: 1px solid #888;
-	border-radius: 4px;
-	color: #888;
-	display: inline-block;
-	margin-top: 50px;
-	padding: 10px 10px;
-}
-
 .hero-container
 {
 	margin-bottom: 25px;
+	overflow: hidden;
 	padding-top: 50px;
 	position: relative;
 }
@@ -243,7 +234,7 @@ a.button.disabled
 .hero-image-container
 {
 	margin: 0 auto;
-	width: 50%;
+	width: 500px;
 }
 
 div.background-colors
@@ -352,5 +343,65 @@ div.background-colors > div:nth-child(even)
 	        -webkit-backdrop-filter: blur(150px);
 	        backdrop-filter: blur(150px);
 	        background-color: rgba(255, 255, 255, 0.3);
+	}
+}
+
+@media only screen and (max-width: 600px)
+{
+	.hero-image-container
+	{
+		width: 95%;
+	}
+}
+
+@media only screen and (max-width: 700px)
+{
+	ul.our-team
+	{
+		align-items: center;
+		flex-direction: column;
+	}
+
+	ul.our-team > li
+	{
+		margin: 0;
+		width: 90%;
+	}
+
+	div.call-to-action > div
+	{
+		width: 85%;
+	}
+}
+
+@media only screen and (max-width: 768px)
+{
+	ul.strengths
+	{
+		align-items: center;
+		flex-direction: column;
+	}
+
+	ul.strengths > li
+	{
+		margin: 0;
+		width: 90%;
+	}
+
+	ul.strengths > li p
+	{
+		text-align: center;
+	}
+
+	ul.testimonials > li .testimonial-container
+	{
+		position: relative;
+		width: 100%;
+		z-index: 3;
+	}
+
+	ul.testimonials > li .image-container
+	{
+		width: 45%;
 	}
 }

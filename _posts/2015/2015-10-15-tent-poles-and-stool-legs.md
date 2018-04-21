@@ -3,6 +3,7 @@ layout: post
 published: 2015-10-15T17:01:48-05:00
 title: Tent Poles And Stool Legs
 author: David
+is_favorite: true
 profile_link: "/media/profile-pics/david-50x50@2x.jpg"
 excerpt: "Apple has repeatedly used an analogy of tent poles to features in new products they are introducing. The analogy is that these features lift up the product and both make it what it is and allow for it to stand on its own. A similar analogy is to legs on a stool. The stool's legs ensure that it can stand up and support weight.
 <br><br>

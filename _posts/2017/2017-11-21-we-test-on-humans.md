@@ -3,6 +3,7 @@ layout: post
 published: 2017-11-21T18:10:35-06:00
 title: We Test on Humans
 author: David
+is_favorite: true
 profile_link: "/media/profile-pics/david-50x50@2x.jpg"
 featured_image_link: "/media/2017/11/robot-testing-chair.jpg"
 excerpt: "An industrial designer imagines the most beautiful chair ever. She sketches it out and then renders it in a software design tool. That tool is able to test the structure of her design..."
@@ -12,9 +13,9 @@ excerpt: "An industrial designer imagines the most beautiful chair ever. She ske
 
 An industrial designer imagines the most beautiful chair ever. She sketches it out and then renders it in a software design tool. That tool is able to test the structure of her design to make sure that it will be able to hold people of all sizes. Plus, since computers are great at math the design tool is able to optimize the design to use the fewest materials possible, reducing costs and weight while being environmentally friendly.
 
-It is easy to get wrapped up in the wonder of the technology and forget the most important question about that chair — is it comfortable? 
+It is easy to get wrapped up in the wonder of the technology and forget the most important question about that chair — is it comfortable?
 
-Recently two different companies that I respect, [Omni Group](https://www.omnigroup.com) and [Basecamp](https://basecamp.com), have gone out of their way to talk about how much they value human testers for their software. Omni Group has a new podcast and [the first episode features Kristina Sontag](https://theomnishow.omnigroup.com/episode/kristina-sontag-software-test-manager), their Software Test Manager. She said "Products that are used by humans need to be tested with that in mind". [DHH wrote a blog post and here’s part of what he said:](https://m.signalvnoise.com/the-value-of-human-exploratory-testing-2dabcc371b3b) "Testing by hand, or exploratory testing, is a crucial technique for ferreting out issues off the happy path." 
+Recently two different companies that I respect, [Omni Group](https://www.omnigroup.com) and [Basecamp](https://basecamp.com), have gone out of their way to talk about how much they value human testers for their software. Omni Group has a new podcast and [the first episode features Kristina Sontag](https://theomnishow.omnigroup.com/episode/kristina-sontag-software-test-manager), their Software Test Manager. She said "Products that are used by humans need to be tested with that in mind". [DHH wrote a blog post and here’s part of what he said:](https://m.signalvnoise.com/the-value-of-human-exploratory-testing-2dabcc371b3b) "Testing by hand, or exploratory testing, is a crucial technique for ferreting out issues off the happy path."
 
 We also highly value human testing and I thought it would be a good time to talk through why we do, our process/workflow, and who are the right people to do the testing and, more importantly, who shouldn’t be doing it.
 

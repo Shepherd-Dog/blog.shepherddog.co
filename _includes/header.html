@@ -12,7 +12,7 @@
 <header id="header">
   <div class="sleeve">
     <div class="menu-button-container">
-            <a href="#">
+            <a>
                 Menu
             </a>
         </div>
@@ -31,7 +31,7 @@
             </div>
             <div class="main-nav-list-container">
                 <ul>
-                    <li class="who-we-are">
+                    <li {% if page.url == "/who-we-are/" %}class="active"{% endif %}>
                         <a href="/who-we-are">
                             Who We Are
                         </a>
@@ -41,7 +41,7 @@
                             Contact Us
                         </a>
                     </li>
-                    <li class="blog">
+                    <li {% if page.url == "/blog/" or page.url == "/blog/index.html" %}class="active"{% endif %}>
                         <a href="/blog">
                             Blog
                         </a>
