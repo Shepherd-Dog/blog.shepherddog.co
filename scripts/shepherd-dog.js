@@ -53,7 +53,30 @@ var ShepherdDog = function ()
 					$(".main-nav-list-container").animate({ scrollLeft: "0" }, 300);
 				}
 			}
+		});
 
+		var $pagers = $(".pager-container li");
+
+		$pagers.on("click", function ()
+		{
+			if ($(this).hasClass("selected")) { return false; }
+
+			$pagers.each(function () {
+				$(this).removeClass("selected");
+			});
+
+			$(this).addClass("selected");
+
+			var index = $(this).index();
+			var $selectedTestimonial = $("div.testimonial-list-container").find("li").eq(index);
+
+			var testimonialPaddingLeft = +$selectedTestimonial.css("padding-left").replace("px", "");
+			var testimonialPaddingRight = +$selectedTestimonial.css("padding-right").replace("px", "");
+			var testimonialMarginLeft = +$selectedTestimonial.css("margin-left").replace("px", "");
+			var testimonialMarginRight = +$selectedTestimonial.css("margin-right").replace("px", "");
+			var testimonialWidth = $selectedTestimonial.width() + testimonialMarginLeft + testimonialMarginRight + testimonialPaddingLeft + testimonialPaddingRight;
+
+			$("div.testimonial-list-container").animate({ "scrollLeft": testimonialWidth * index });
 		});
 	};
 };
