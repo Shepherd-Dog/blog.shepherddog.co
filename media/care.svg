@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="88px" height="88px" viewBox="0 0 88 88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <title>favorite</title>
+<svg width="80px" height="82px" viewBox="0 0 80 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>Slice 1</title>
     <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="noun_308018_cc" sketch:type="MSLayerGroup" transform="translate(0.000000, 7.000000)" fill="#000000">
-            <g id="Group" sketch:type="MSShapeGroup">
-                <g id="Shape">
-                    <path d="M44.0010381,12.6537505 L37.9470381,6.5547505 C29.2730381,-2.18424946 15.1966381,-2.18324946 6.5146381,6.5627505 C-2.16926195,15.3107505 -2.17106195,29.4857505 6.5063381,38.2277505 L28.2810381,60.1632505 L44.0010381,75.9997505 L81.4960381,38.2277505 C90.1700381,29.4887505 90.1690381,15.3087505 81.4870381,6.5627505 C72.8040381,-2.18524946 58.7330381,-2.18724946 50.0550381,6.5547505 L44.0010381,12.6537505 L44.0010381,12.6537505 Z"></path>
+        <g id="Unknown-2" sketch:type="MSLayerGroup" transform="translate(3.000000, 9.000000)" stroke-width="5.04545455" stroke="#000000">
+            <g id="Page-1" sketch:type="MSShapeGroup">
+                <g id="noun_308018_cc">
+                    <g id="Group">
+                        <g id="Shape">
+                            <path d="M37.0008729,10.6406538 L31.9100093,5.51194928 C24.6159639,-1.83675523 12.7789911,-1.83591432 5.4782184,5.51867656 C-1.82415209,12.8749493 -1.82566573,24.7948356 5.47123886,32.1460629 L23.781782,50.5918243 L37.0008729,63.9088811 L68.5307593,32.1460629 C75.8248048,24.7973584 75.8239639,12.8732675 68.5231911,5.51867656 C61.2215775,-1.83759614 49.3891457,-1.83927795 42.0917366,5.51194928 L37.0008729,10.6406538 L37.0008729,10.6406538 Z"></path>
+                        </g>
+                    </g>
                 </g>
             </g>
         </g>
