@@ -227,11 +227,14 @@ nav .twitter-image
         border: none;
     }
 
-    .main-nav-list-container
+    @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none)
     {
-        -webkit-backdrop-filter: none;
-        backdrop-filter: none;
-        background-color: transparent;
+        .main-nav-list-container
+        {
+            -webkit-backdrop-filter: none;
+            backdrop-filter: none;
+            background-color: transparent;
+        }
     }
 
     div.contact-info-container
