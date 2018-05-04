@@ -14,7 +14,7 @@ This blog is built on top of [Jekyll](https://jekyllrb.com) which is a static si
 
 1. Once you are happy with what you've written, commit your changes to git and push them to Github.
 
-1. Deploy the site to the production server by running `rake deploy` in this site's folder on your local machine. You'll be prompted for a password which you should be able to find in the shared 1Password.
+1. This site is setup to be automatically deployed by the Jenkins server. Wait a couple minutes and your changes will be live!
 
 
 If something doesn't work, please update this README!
