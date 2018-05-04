@@ -23,7 +23,7 @@ jekyll build'''
     stage('Deploy') {
       steps {
         sh '''apt-get install -y rsync
-rsync -avz -e "ssh -i /root/.ssh/id_rsa_jenkins" ./_site/ shepherddog@firehawk.shepherddog.co:/var/www/blog.shepherddog.com/public_html/'''
+rsync -avz -e "ssh -i /root/.ssh/id_rsa_jenkins" ./_site/ shepherddog@firehawk.shepherddog.co:/var/www/blog.shepherddog.co/public_html/'''
       }
     }
     stage('Notify') {
