@@ -23,7 +23,7 @@ twitter_username: ShepherdDogHQ
 github_username:  ShepherdDog
 copyright_starting_year: "2015"
 copyright_owner: "Shepherd Dog, LLC"
-version: 2.0.0b
+version: 2.0.0c
 pagination:
   enabled: true
   sort_reverse: true
