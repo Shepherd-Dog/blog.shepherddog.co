@@ -17,7 +17,7 @@ title: Shepherd Dog - Web, iOS, Android, and Business Automation Development in 
 email: howdy@shep.dog
 description: > # this means to ignore newlines until "baseurl:"
   Shepherd Dog builds software tools and applications for small businesses, startups, and non-profits – including web, iOS, and Android apps as well as custom software for business automation.
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://shep.herd.dog" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ShepherdDogHQ
 github_username:  ShepherdDog
@@ -28,6 +28,14 @@ pagination:
   enabled: true
   sort_reverse: true
 permalink: pretty
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      category: blog
 
 sass:
   style: compressed
