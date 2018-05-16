@@ -1,0 +1,13 @@
+@media only screen and (min-width: 900px)
+{
+    div.projects > div
+    {
+        align-items: center;
+        flex-direction: row;
+    }
+
+    div.projects > div.project-two
+    {
+        flex-direction: row-reverse;
+    }
+}

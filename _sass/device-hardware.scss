@@ -1,0 +1,175 @@
+/* Mobile First */
+div.hardware-pad
+{
+	background: none;
+	position: relative;
+}
+
+figure.image-hardware-pad
+, figure.feature-one-screenshot-pad
+{
+	background-repeat: no-repeat;
+	margin: 0 auto;
+}
+
+figure.image-hardware-pad
+{
+	background-image: url(/media/ipad-pro-frame.png);	
+	z-index: 1;
+}
+
+figure.feature-one-screenshot-pad
+{
+	background-image: url(/media/feature-one-screenshot.png);
+	position: absolute;
+	z-index: 2;
+}
+
+video.feature-video-pad
+{
+	position: absolute;
+	z-index: 3;	
+}
+
+span.video-disclaimer
+{
+	background-color: rgba(254,254,254,0.9);
+	border-radius: 4px;
+	bottom: -3vw;
+	color: rgba(0, 0, 0, 0.6);
+	display: block;
+	font-size: 0.7em;
+	left: 9%;
+	margin: 0 auto;
+    padding: 6px;
+	position: absolute;
+	text-align: center;
+	width: 80%;
+}
+
+a.replay-button
+{
+	bottom: -7vw;
+	display: block;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+
+a.replay-button.u-hidden
+{
+	visibility: hidden;
+}
+
+figure.image-hardware-pad
+, figure.feature-one-screenshot-pad
+{
+	background-size: 100%;
+	height: 67.72vw;
+	width: 88vw;
+}
+
+figure.feature-one-screenshot-pad
+{
+	display: none;
+}	
+
+video.feature-video-pad
+{
+	height: 49.64vw;
+	left: 50%;
+	margin-left: -31.5vw;
+	margin-top: -24.8vw;
+	top: 50%;
+	width: 63vw;
+}
+
+div.feature-three ul
+{
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+    width: 80%;
+}
+
+/* Desktop */
+@media only screen
+and (min-width: 500px) 
+{
+	span.video-disclaimer
+	{
+		bottom: -1vw;
+	}
+
+	a.replay-button
+	{
+		bottom: -5vw;
+	}
+}
+
+@media only screen
+and (min-width: 610px) 
+{
+	span.video-disclaimer
+	{
+		bottom: 0;
+	}
+
+	a.replay-button
+	{
+		bottom: -1vw;
+	}
+}
+
+/* Desktop */
+@media only screen
+and (min-width: 700px) 
+{
+	span.video-disclaimer
+	{
+		bottom: 4vw;
+	}
+
+	a.replay-button
+	{
+		bottom: 1.5vw;
+	}
+}
+
+@media only screen
+and (min-width: 900px) 
+{
+
+	figure.image-hardware-pad
+	, figure.feature-one-screenshot-pad
+	{
+		height: 30.78vw;
+		width: 40vw;
+	}
+
+	video.feature-video-pad
+	{
+		height: 22.04vw;
+		/*left: 56px;*/
+		margin-left: -14.32vw;
+		margin-top: -11.02vw;
+		/*top: 71px;*/
+		width: 28.64vw;
+	}
+
+	div.feature-three ul
+	{
+	    margin: 0;
+	    width: 100%;
+	}
+
+	span.video-disclaimer
+	{
+		bottom: -1vw;
+	}
+
+	a.replay-button
+	{
+		bottom: -3vw;
+	}
+}
